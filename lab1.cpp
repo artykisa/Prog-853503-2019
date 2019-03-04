@@ -1,4 +1,4 @@
-﻿
+﻿// Вариант 20
 #include "pch.h"
 #include <stdio.h>
 #include <string.h>
@@ -12,8 +12,8 @@ int main()
 	char str_num[256];
 	gets_s(str_num, 256);
 	
-	int str_num_length = strlen(str_num);
-	int index = 0;
+	int str_num_length = strlen(str_num); // узнаю длину числа с точкой
+	int index = 0;  // с этим индексом будем перебирать все цифры числа
 	int whole_sum_result = whole_sum_function(str_num, index);
 	int fractional_sum_result = fractional_sum_function(str_num, index, str_num_length);
 	if (whole_sum_result > fractional_sum_result)
