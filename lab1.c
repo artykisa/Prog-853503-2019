@@ -18,14 +18,14 @@ int main()
 		number1 = number2;
 		number2 = nextNumber;
 		int digits = 1;
-		while (nextNumber / digits > 0)		//numbers увеличивается на столько, сколько цифр в новом числе
+		while (nextNumber / digits > 0)	//numbers увеличивается на столько, сколько цифр в новом числе
 		{
 			numbers++;
 			digits *= 10;
 		}
 	}
 	printf("%s", "Number: ");
-	if (k < 3)					//Если искомая цифра имеет номер 1 или 2, то вывести 1,
+	if (k < 3)				//Если искомая цифра имеет номер 1 или 2, то вывести 1,
 		printf("%d", 1);
 	else {						//иначе вывести нужную цифру последнего
 		while (numbers > k)			//найденного числа последовательности
