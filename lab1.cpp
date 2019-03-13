@@ -1,13 +1,10 @@
-
 #include <stdio.h>
-
 int sym(int num)  // определяет кол-во символов 
 {
 	if (num / 10 < 1)
 		return 1;
 	else return 1 + sym(num / 10);
 }
-
 int main()
 {
 	int num;
