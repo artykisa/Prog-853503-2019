@@ -1,7 +1,5 @@
 ﻿//Вариант 13
-#include "pch.h"
-#include <iostream>
-#include<conio.h>
+#include<stdio.h>
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -80,6 +78,6 @@ eshe: system("cls");
 			case '0':  printf(" Ноль\n");   _getch(); return 0; break;
 			}
 	}
-	_getch();
+	system("pause");
 	return 0;
 }
