@@ -13,7 +13,7 @@ int main()
 		int num = i;
 		while (num)
 		{
-			int a = num; 
+			int a = num;
 			int b = num % 10;
 			num /= 10;
 			int c = num % 10;
