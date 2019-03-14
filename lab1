@@ -5,7 +5,7 @@ int main()
 {
 	int n;
 	printf("Enter number ");
-	scanf_s("%d", &n); // Ввод n
+	scanf("%d", &n); // Ввод n
 	printf("increase: ");
 	int i;
 	for (i = 12; i <= n; i++) // Перебираем числа от 12 до n
