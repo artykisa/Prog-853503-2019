@@ -1,7 +1,6 @@
 //Вариант 28
 
-#include "pch.h"
-#include <iostream>
+#include <stdio.h>
 
 int main()
 {
@@ -18,10 +17,10 @@ int main()
 		number1 = number2;
 		number2 = nextNumber;
 		int digits = 1;
-		while (nextNumber / digits > 0)	//numbers увеличивается на столько, сколько цифр в новом числе
+		while (nextNumber != 0)	//numbers увеличивается на столько, сколько цифр в новом числе
 		{
 			numbers++;
-			digits *= 10;
+			nextNumber/=10;
 		}
 	}
 	printf("%s", "Number: ");
@@ -31,8 +30,8 @@ int main()
 		while (numbers > k)			//найденного числа последовательности
 		{
 			numbers--;
-			nextNumber /= 10;
+			number2 /= 10;
 		}
-		printf("%d", nextNumber % 10);
+		printf("%d", number2 % 10);
 	}
 }
