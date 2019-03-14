@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int whole_sum_function(char str_num[], int &index);
+int whole_sum_function(char str_num[], int &index, int str_num_length);
 int fractional_sum_function(char str_num[], int &index, int str_num_length);
 
 int main()
@@ -13,7 +13,7 @@ int main()
 	gets_s(str_num, 256);
 	int str_num_length = strlen(str_num); // узнаю длину числа с точкой
 	int index = 0;  // с этим индексом будем перебирать все цифры числа
-	int whole_sum_result = whole_sum_function(str_num, index);
+	int whole_sum_result = whole_sum_function(str_num, index, str_num_length);
 	int fractional_sum_result = fractional_sum_function(str_num, index, str_num_length);
 	if (whole_sum_result > fractional_sum_result)
 	{
@@ -32,7 +32,7 @@ int main()
 int whole_sum_function(char str_num[], int &index)
 {
 	int whole_sum_result = 0;
-	while (str_num[index] != '.' && str_num[index] != ',')
+	while (str_num[index] != '.' && str_num[index] != ',' && index < str_num_length)
 	{
 		whole_sum_result += str_num[index] - '0';
 		index++;
