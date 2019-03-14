@@ -8,9 +8,9 @@ int main()
 {
 	int numA, numB;
 	printf("input numA: ");
-	scanf_s("%u", &numA);
+	scanf("%u", &numA);
 	printf("input numB: ");
-	scanf_s("%u", &numB);
+	scanf("%u", &numB);
 
 	int indent = Get_indent(numA * numB);
 	
