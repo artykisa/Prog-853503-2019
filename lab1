@@ -1,7 +1,5 @@
-#include "pch.h"
-#include <iostream>
 #include <stdio.h>
-using namespace std;
+#include <stdbool.h>
 
 int main()
 {
@@ -9,11 +7,11 @@ int main()
 	int n;//значение элемента массива
 	int reshenie[20];
 	printf("Napishi chislo m?\n");
-	scanf("%d", &m);
+	scanf_s("%d", &m);
 	m1 = m;//копия числа m
 	for (int y = m; y > 0; y--)
 	{
-		bool proverka=true;
+		_Bool proverka = true;
 		m1 = y;
 		while (m1)//перевод в двоичную систему числа и запись в массив
 		{
@@ -32,9 +30,8 @@ int main()
 		}
 
 		i = 0;
-		
+
 	}
 
 	return 0;
 }
-
