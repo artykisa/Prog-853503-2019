@@ -32,7 +32,7 @@ int main()
 int whole_sum_function(char str_num[], int &index)
 {
 	int whole_sum_result = 0;
-	while (str_num[index] != '.')
+	while (str_num[index] != '.' && str_num[index] != ',')
 	{
 		whole_sum_result += str_num[index] - '0';
 		index++;
@@ -43,7 +43,10 @@ int whole_sum_function(char str_num[], int &index)
 int fractional_sum_function(char str_num[], int &index, int str_num_length)
 {
 	int fractional_sum_result = 0;
-	index++;
+	while (str_num[index] == '.' || str_num[index] == ',')
+	{
+		index++;
+	}
 	while (index < str_num_length)
 	{
 		fractional_sum_result += str_num[index] - '0';
