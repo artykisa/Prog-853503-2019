@@ -11,7 +11,6 @@ int main()
 	printf( "Write your number: ");
 	char str_num[256];
 	gets_s(str_num, 256);
-	
 	int str_num_length = strlen(str_num); // узнаю длину числа с точкой
 	int index = 0;  // с этим индексом будем перебирать все цифры числа
 	int whole_sum_result = whole_sum_function(str_num, index);
