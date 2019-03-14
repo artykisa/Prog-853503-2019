@@ -9,7 +9,7 @@ int main()
 	int n;//значение элемента массива
 	int reshenie[20];
 	printf("Napishi chislo m?\n");
-	scanf_s("%d", &m);
+	scanf("%d", &m);
 	m1 = m;//копия числа m
 	for (int y = m; y > 0; y--)
 	{
