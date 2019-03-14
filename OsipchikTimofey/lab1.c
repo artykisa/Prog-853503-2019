@@ -42,8 +42,7 @@ void show(int numA, int numB, int indent)
 	{
 		do
 		{
-			if (numB / 10 == 0) printf("\n%*u", indent, numA* (numB % 10));
-			else printf("\n+%*u", --indent, numA * (numB % 10));
+		        printf("\n+%*u", --indent, numA * (numB % 10));
 			numB /= 10;
 		} while (numB);
 		printf("\n ---------");
