@@ -42,6 +42,7 @@ void show(int numA, int numB, int indent)
 	{
 		do
 		{
+			// уменьшаем отступ и выводм промежуточный результат
 		        printf("\n+%*u", --indent, numA * (numB % 10));
 			numB /= 10;
 		} while (numB);
