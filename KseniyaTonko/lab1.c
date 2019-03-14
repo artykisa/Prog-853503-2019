@@ -16,7 +16,6 @@ int main()
 		nextNumber = number1 + number2;		//Получение нового числа
 		number1 = number2;
 		number2 = nextNumber;
-		int digits = 1;
 		while (nextNumber != 0)	//numbers увеличивается на столько, сколько цифр в новом числе
 		{
 			numbers++;
