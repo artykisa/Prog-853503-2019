@@ -11,7 +11,7 @@ int main()
 	int nextNumber;					//Следующее число последовательности
 	int numbers = 2;				//Количество чисел последовательности из чисел Фибоначчи
 	printf("Enter k: ");
-	scanf_s("%d", &k);
+	scanf("%d", &k);
 	while (numbers < k)						
 	{
 		nextNumber = number1 + number2;		//Получение нового числа
