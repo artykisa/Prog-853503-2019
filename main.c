@@ -22,10 +22,10 @@ int main() {
         return (0);
     }
     printf ("%d %s %d %s", k, "\t|\t", l, "\n");
-    int kolvoCifr1, kolvoCifr2;
+    int kolvoCifr1;
     kolvoCifr1 = log10 (k) + 1;
-    kolvoCifr2 = log10 (l) + 1;
-    int chislo1 [ kolvoCifr1 ];
+    
+    int chislo1 [ 10 ];
     for (int i=0; i < kolvoCifr1; i++)  //разбиваем число на массив цифр
     {
         int temp = pow (10, i);
