@@ -4,8 +4,7 @@
 
 int main()
 {
-	int m,i=0, reshenie[20];
-	int resh=0, chislo=1;
+	int m,i=0,chislo = 1;
 	printf("Napishi chislo m?\n");
 	scanf_s("%d", &m);
 	int m1 = m;
