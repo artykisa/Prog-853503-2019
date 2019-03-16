@@ -1,5 +1,5 @@
-//Вариант 25
-//Сакович Влад
+//РІР°СЂРёР°РЅС‚ 25
+//СЃР°РєРѕРІРёС‡ РІР»Р°Рґ
 #include "pch.h"
 #include <iostream>
 
@@ -15,13 +15,10 @@ int HowMany(int a)
 }
 void perevod(int *arr, int a, int num)
 {
-
 	for (int i = 0; i < a; i++)
 	{
 		arr[i] = num % 2;
 		num /= 2;
-	}
-	for (int i = 0; i < a; i++) {
 	}
 }
 void out(int num, int *arr, int a)
@@ -52,9 +49,9 @@ int main()
 	for (int i = 1; i < m; i++)
 	{
 		kolvo = HowMany(i);
-		int *arr = new int[kolvo];
+		arr = (int*)malloc(kolvo* sizeof(int));
 		perevod(arr, kolvo, i);
 		out(i, arr, kolvo);
-		delete[] arr;
+		free(arr);
 	}
 }
