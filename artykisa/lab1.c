@@ -11,9 +11,14 @@ int main()
 	int len;
 	while (Vvod) {
 	system("cls");
+
 	printf("Введите свое число до 100, которое я конвертирую в словесный вариант!\n");
 	gets_s(a);
-	
+	if (a[0]=='1' && a[1]=='0' && a[2]=='0') {
+		printf("Cто\n");
+		system("pause");
+		return 0;
+	}
 	Vvod = false;
 	
 		if (a[1] == '\0') len = 1;
@@ -24,7 +29,7 @@ int main()
 		}
 		if (Vvod == false) {
 			for (int i = 0; i < len; i++) {
-				if (a[i] != '0' && a[i] != '1' && a[i] != '2' && a[i] != '3'&& a[i] != '4' && a[i] != '5' && a[i] != '6'&& a[i] != '7' && a[i] != '8' && a[i] != '9') {
+				if (a[i] < '0' || a[i] > '9') {
 					printf("Неправильный ввод!\n Попробуйте еще раз . . ."); system("pause"); Vvod = true;
 				}
 			}
@@ -78,16 +83,16 @@ int main()
 		case '0':  printf("");            break;
 		}
 		switch (a[1]) {
-		case '1':  printf(" Один\n");   system("pause"); return 0;
-		case '2':  printf(" Два\n");    system("pause"); return 0;
-		case '3':  printf(" Три\n");    system("pause"); return 0;
-		case '4':  printf(" Четыре\n"); system("pause"); return 0;
-		case '5':  printf(" Пять\n");   system("pause"); return 0;
-		case '6':  printf(" Шесть\n");  system("pause"); return 0;
-		case '7':  printf(" Семь\n");   system("pause"); return 0;
-		case '8':  printf(" Восемь\n"); system("pause"); return 0;
-		case '9':  printf(" Девять\n"); system("pause"); return 0;
-		case '0':  printf("\n");        system("pause"); return 0;
+		case '1':  printf(" Один\n");  break;
+		case '2':  printf(" Два\n");    break;
+		case '3':  printf(" Три\n");    break;
+		case '4':  printf(" Четыре\n"); break;
+		case '5':  printf(" Пять\n");   break;
+		case '6':  printf(" Шесть\n");  break;
+		case '7':  printf(" Семь\n");   break;
+		case '8':  printf(" Восемь\n"); break;
+		case '9':  printf(" Девять\n"); break;
+		case '0':  printf("\n");        break;
 		}
 	}
 	system("pause");
