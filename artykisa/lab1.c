@@ -44,16 +44,16 @@ int main()
 	if (len == 1)
 	{
 		switch (a[0]) {
-		case '1':  printf("Один\n");    system("pause"); return 0;
-		case '2':  printf("Два\n");     system("pause"); return 0;
-		case '3':  printf("Три\n");     system("pause"); return 0;
-		case '4':  printf("Четыре\n");  system("pause"); return 0;
-		case '5':  printf("Пять\n");    system("pause"); return 0;
-		case '6':  printf("Шесть\n");   system("pause"); return 0;
-		case '7':  printf("Семь\n");    system("pause"); return 0;
-		case '8':  printf("Восемь\n");  system("pause"); return 0;
-		case '9':  printf("Девять\n");  system("pause"); return 0;
-		case '0':  printf("Ноль\n");    system("pause"); return 0;
+		case '1':  printf("Один\n");    break;
+		case '2':  printf("Два\n");     break;
+		case '3':  printf("Три\n");     break;
+		case '4':  printf("Четыре\n");  break;
+		case '5':  printf("Пять\n");    break;
+		case '6':  printf("Шесть\n");   break;
+		case '7':  printf("Семь\n");    break;
+		case '8':  printf("Восемь\n");  break;
+		case '9':  printf("Девять\n");  break;
+		case '0':  printf("Ноль\n");    break;
 		}
 	}
 	if (len == 2) {
