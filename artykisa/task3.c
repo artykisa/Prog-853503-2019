@@ -1,6 +1,5 @@
 
 #include <stdio.h>
-#include <conio.h>
 int main()
 {
 	char line[1024];
